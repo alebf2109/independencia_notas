@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>EstudianteController</servlet-name>
+        <servlet-class>Controllers.EstudianteController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NotasController</servlet-name>
+        <servlet-class>Controllers.NotasController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BoletasController</servlet-name>
+        <servlet-class>Controllers.BoletasController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>Controllers.LoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EstudianteController</servlet-name>
+        <url-pattern>/estudiantes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NotasController</servlet-name>
+        <url-pattern>/notas</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BoletasController</servlet-name>
+        <url-pattern>/boletas</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/LoginController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
